@@ -7,16 +7,38 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+#import <ChartboostSDK/Chartboost.h>
+
+@interface ViewController () <CHBBannerDelegate>
+
+@property (strong, nonatomic) CHBBanner *banner;
 
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
+    NSString *appID = @"";
+    NSString *appSignature = @"";
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [Chartboost startWithAppID:appID
+                  appSignature:appSignature
+                    completion:^(CHBStartError * _Nullable error) {
+    }];
 }
+
+- (IBAction)showBanner:(UIButton *)sender
+{
+
+    NSString *bannerLocation = @"";
+    self.banner = [[CHBBanner alloc] initWithSize:CHBBannerSizeStandard location:bannerLocation delegate:self];
+    self.banner.translatesAutoresizingMaskIntoConstraints = NO;
+    [self.view addSubview:self.banner];
+    [NSLayoutConstraint activateConstraints:@[[self.banner.bottomAnchor constraintEqualToAnchor:self.view.safeAreaLayoutGuide.bottomAnchor],
+                                              [self.banner.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor]]];
+    [self.banner showFromViewController:self];
+}
+
 
 
 @end

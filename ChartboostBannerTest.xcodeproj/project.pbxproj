@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34D204180B63139FEE0C9EE6 /* Pods_ChartboostBannerTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90135F13F0F67D5950BEF028 /* Pods_ChartboostBannerTest.framework */; };
 		54123A492B19DA3F00C04793 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54123A482B19DA3F00C04793 /* AppDelegate.m */; };
 		54123A4C2B19DA3F00C04793 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54123A4B2B19DA3F00C04793 /* SceneDelegate.m */; };
 		54123A4F2B19DA3F00C04793 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54123A4E2B19DA3F00C04793 /* ViewController.m */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F6B7488F4B83703DB9CF25A /* Pods-ChartboostBannerTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartboostBannerTest.debug.xcconfig"; path = "Target Support Files/Pods-ChartboostBannerTest/Pods-ChartboostBannerTest.debug.xcconfig"; sourceTree = "<group>"; };
 		54123A442B19DA3F00C04793 /* ChartboostBannerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChartboostBannerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54123A472B19DA3F00C04793 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		54123A482B19DA3F00C04793 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,6 +31,8 @@
 		54123A562B19DA4100C04793 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54123A582B19DA4100C04793 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54123A592B19DA4100C04793 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		90135F13F0F67D5950BEF028 /* Pods_ChartboostBannerTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChartboostBannerTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F58145F62FCE452F4B6AF865 /* Pods-ChartboostBannerTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChartboostBannerTest.release.xcconfig"; path = "Target Support Files/Pods-ChartboostBannerTest/Pods-ChartboostBannerTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34D204180B63139FEE0C9EE6 /* Pods_ChartboostBannerTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +52,8 @@
 			children = (
 				54123A462B19DA3F00C04793 /* ChartboostBannerTest */,
 				54123A452B19DA3F00C04793 /* Products */,
+				BEBE11A0D1F00C5286E5F5B0 /* Pods */,
+				B201ED15C9F3A0ED39973F8A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -76,6 +83,23 @@
 			path = ChartboostBannerTest;
 			sourceTree = "<group>";
 		};
+		B201ED15C9F3A0ED39973F8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				90135F13F0F67D5950BEF028 /* Pods_ChartboostBannerTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEBE11A0D1F00C5286E5F5B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0F6B7488F4B83703DB9CF25A /* Pods-ChartboostBannerTest.debug.xcconfig */,
+				F58145F62FCE452F4B6AF865 /* Pods-ChartboostBannerTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54123A5D2B19DA4100C04793 /* Build configuration list for PBXNativeTarget "ChartboostBannerTest" */;
 			buildPhases = (
+				A34FD0A2D6CACE52FB3DD899 /* [CP] Check Pods Manifest.lock */,
 				54123A402B19DA3F00C04793 /* Sources */,
 				54123A412B19DA3F00C04793 /* Frameworks */,
 				54123A422B19DA3F00C04793 /* Resources */,
+				A9D3EC3CD89AC1B08B9C0839 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,6 +166,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A34FD0A2D6CACE52FB3DD899 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChartboostBannerTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9D3EC3CD89AC1B08B9C0839 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChartboostBannerTest/Pods-ChartboostBannerTest-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChartboostBannerTest/Pods-ChartboostBannerTest-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChartboostBannerTest/Pods-ChartboostBannerTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		54123A402B19DA3F00C04793 /* Sources */ = {
@@ -293,12 +361,14 @@
 		};
 		54123A5E2B19DA4100C04793 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F6B7488F4B83703DB9CF25A /* Pods-ChartboostBannerTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P65VEJ9422;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChartboostBannerTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -320,12 +390,14 @@
 		};
 		54123A5F2B19DA4100C04793 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F58145F62FCE452F4B6AF865 /* Pods-ChartboostBannerTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = P65VEJ9422;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ChartboostBannerTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
