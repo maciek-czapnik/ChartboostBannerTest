@@ -4,7 +4,7 @@
 target 'ChartboostBannerTest' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  pod 'ChartboostSDK', '9.5.1'
+  pod 'ChartboostSDK', '9.6.0'
 
   # Pods for ChartboostBannerTest
 
